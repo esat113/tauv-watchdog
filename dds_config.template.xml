@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CycloneDDS>
+  <Domain id="any">
+    <General>
+      <Interfaces>
+        <NetworkInterface name="${DDS_INTERFACE}" priority="default" multicast="default"/>
+      </Interfaces>
+      <AllowMulticast>default</AllowMulticast>
+      <MaxMessageSize>65500B</MaxMessageSize>
+      <FragmentSize>32kB</FragmentSize>
+    </General>
+    <Discovery>
+      <Peers>
+        <Peer Address="${JETSON_IP}"/>
+        <Peer Address="${PC_IP}"/>
+      </Peers>
+    </Discovery>
+  </Domain>
+</CycloneDDS>

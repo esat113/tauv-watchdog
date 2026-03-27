@@ -1,0 +1,5 @@
+DDS_DOMAIN: 0
+LOG_TOPIC: "diagnostic/log"
+MAX_BUFFER: 50000
+OUTPUT_DIR: "/data/logs"
+STATUS_HZ: 2.0
