@@ -1,2 +1,1 @@
-cyclonedds==0.10.5
 pyyaml
